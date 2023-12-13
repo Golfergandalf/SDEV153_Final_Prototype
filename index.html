@@ -1,0 +1,93 @@
+<!-- Final Project: Home Page
+Name:   Gabby Willard
+Class:  SDEV 153
+Date:   11/22/23
+File:   index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body class="home_body">
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets_otis.html">Otis</a></li>
+                <li><a href="pets_gandalf.html">Gandalf</a></li>
+                <li><a href="pets_pepper.html">Pepper</a></li>
+            </ul>
+        </nav>
+        <!-- Header -->
+        <header class="home_header"><h1>My Adorable Pets</h1></header>
+
+        <!-- ◤━━━━━ Main Content ━━━━━◥ -->
+        <main class="home_main">
+
+            <p class="home_subtext">Use the navigation bar at the top to see specific info about each of my pets.</p>
+
+            <!-- Photos -->
+            <div class="photo_collage">
+
+                <figure>
+                    <img src="images/Otis_1.jpg" alt="My Dog, Otis">
+                    <figcaption>Otis</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Gandalf_1.jpg" alt="My Cat, Gandalf">
+                    <figcaption>Gandalf</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Pepper_1.jpg" alt="My Cat, Pepper">
+                    <figcaption>Pepper</figcaption>
+                </figure>
+
+            </div>
+
+            <!-- Form -->
+            <form class="survey" action="test.php" method="post" autocomplete="on">
+
+                <fieldset>
+                    <legend>Survey for Fellow Pet Owners</legend>
+
+                    <label>
+                        Favorite Kind of Pet? <span class="req">*</span>
+                        <select id="fav_kind_of_pet" name="fav_kind_of_pet" required>
+                            <option value="" selected>None Selected</option>
+                            <option value="cat">Cat</option>
+                            <option value="dog">Dog</option>
+                            <option value="other">Bird</option>
+                            <option value="other">Hamster</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                    <label>
+                        How many pets do you like to have at a time? <span class="req">*</span>
+                        <input type="text" id="num_of_pets" name="num_of_pets" placeholder="Number of pets" autocomplete="num_of_pets" required />
+                    </label>
+
+                </fieldset>
+
+                <label>
+                    Comments
+                    <textarea id="comments" name="comments" placeholder="Additional Comments"></textarea>
+                </label>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+
+        </main>
+
+
+    </body>
+</html>
